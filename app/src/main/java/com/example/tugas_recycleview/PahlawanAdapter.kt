@@ -31,7 +31,6 @@ class PahlawanAdapter(private val context: Context, private val pahlawanList: Li
         holder.itemView.findViewById<TextView>(R.id.judul).text = pahlawan.nama
         holder.itemView.findViewById<TextView>(R.id.deskripsi).text = pahlawan.deskripsi
 
-        // Set gambar pahlawan ke ImageView berdasarkan nama berkas gambar
         val gambarImageView = holder.itemView.findViewById<ImageView>(R.id.gambar)
         val gambarFileName = pahlawan.gambarFileName
         val resID = context.resources.getIdentifier(gambarFileName, "drawable", context.packageName)
